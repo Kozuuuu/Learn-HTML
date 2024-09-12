@@ -162,17 +162,51 @@
             
             </address>
             <!-- THIS IS HOW TO RECIEVE INPUT FROM USER -->
+
+    <hr>
+    <!-- TO RECIEVE INPUT FROM USER -->
         <section>
-            <p><strong>Let me now where you are from!</strong></p>
+            <p><strong>Let me know who you are and where you're from!</strong></p>
             <!-- ACTION METHOD IS 'GET' -->
             <from action="https://httpbin.org/get" method="get">
-                <label for="countryName">Country Name:</label>
-                <input type="text" name="countryName" id="countryName" placeholder="Philippines" autocomplete="on" required autofocus>
-                <!-- THE tpye="" is to know what kind of data/variable it will recieve
-                id="" AND label="" SHOULD BE THE SAME WHILE name="" IS FOR SERVER SIDE (BACKEND)
-                placeholder="" AESTHETICS = VERY DEMUIRE
-                reuired MAKES IT SO THAT THE USE CANT SEND EMPTY DATA
-                autofous CAN ONLY BE USED ONCE PER WEB PAGE  -->
+                <p>
+                    <label for="countryName">Country:</label>
+                    <input type="text" name="countryName" id="countryName" placeholder="Philippines" autocomplete="on" required> <!--autofocus -->
+                        <!-- THE tpye="" is to know what kind of data it will recieve
+                        id="" AND label="" SHOULD BE THE SAME WHILE name="" IS FOR SERVER SIDE (BACKEND)
+                        placeholder="" AESTHETICS = VERY DEMUIRE
+                        reuired MAKES IT SO THAT THE USE CANT SEND EMPTY DATA
+                        autofous CAN ONLY BE USED ONCE PER WEB PAGE  -->
+                </p>
+                <p>
+                    <label for="stateName">Sate:</label>
+                    <input type="text" name="stateName" id="stateName" placeholder="Manila" autocomplete="on" required> 
+                </p>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Val" autocomplete="on" required> 
+                </p>
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="18-90" min="18" max="90" required> 
+                </p>
+                <p>
+                    <label for="generation">What Genration were you born in:</label> 
+                    <input type="number" name="generation" id="generation" min="1900" max="2020" step="10" value="1900" required>  
+                </p>
+                <p>
+                    <label for="stateName">Sate:</label>
+                    <input type="text" name="stateName" id="stateName" placeholder="Manila" autocomplete="on" required> 
+                </p>
+                <p>
+                    <label for="gcashNumber">Gcash Number:</label>
+                    <input type="tel" name="gcashNumber" id="gcashNumber" placeholder="8888888888"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="bankAccPassword">Bank Account Password:</label>
+                    <input type="password" name="bankAccPassword" id="bankAccPassword" placeholder="Your Password" required> 
+                </p>
             </from>
         </section>
     </article>
