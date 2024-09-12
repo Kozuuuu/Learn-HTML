@@ -161,10 +161,18 @@
                 <br>ZipCode: 9014
             
             </address>
+            <!-- THIS IS HOW TO RECIEVE INPUT FROM USER -->
         <section>
             <p><strong>Let me now where you are from!</strong></p>
+            <!-- ACTION METHOD IS 'GET' -->
             <from action="https://httpbin.org/get" method="get">
-                <label for"
+                <label for="countryName">Country Name:</label>
+                <input type="text" name="countryName" id="countryName" placeholder="Philippines" autocomplete="on" required autofocus>
+                <!-- THE tpye="" is to know what kind of data/variable it will recieve
+                id="" AND label="" SHOULD BE THE SAME WHILE name="" IS FOR SERVER SIDE (BACKEND)
+                placeholder="" AESTHETICS = VERY DEMUIRE
+                reuired MAKES IT SO THAT THE USE CANT SEND EMPTY DATA
+                autofous CAN ONLY BE USED ONCE PER WEB PAGE  -->
             </from>
         </section>
     </article>
