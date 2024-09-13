@@ -191,7 +191,23 @@
                     <input type="number" name="age" id="age" placeholder="18-90" min="18" max="90" required> 
                 </p>
                 <p>
-                    <label for="generation">What Genration were you born in:</label> 
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p></p>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" id="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label for="female">Female</label>
+                </p>
+                <p>
+                    <label for="generation">What Genration were you born in:</label>
                     <input type="number" name="generation" id="generation" min="1900" max="2020" step="10" value="1900" required>  
                 </p>
                 <p>
